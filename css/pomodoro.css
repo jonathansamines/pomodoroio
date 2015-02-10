@@ -1,0 +1,26 @@
+/**
+ * pomodoro.css
+ * estilos de la aplicacion pomodoro
+ * @author Jonathan Samines
+ */
+
+html, body{
+	color : #333333;
+	font-family : 'Tahoma', 'sans-serif', 'sans', arial;
+	margin : 0;
+	height : 100%;
+}
+
+header, main{
+	float : left;
+	height : 100%;
+	margin : 0;
+	width : 50%;
+}
+	header{
+		background-color : #C82643;
+	}
+	header h1 a{
+		color : #FFF;
+		text-decoration : none;
+	}

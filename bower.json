@@ -1,0 +1,7 @@
+{
+  "name": "pomodoroio",
+  "description": "Aplicacion de gestion del tiempo pomodoro",
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}
