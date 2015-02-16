@@ -11,16 +11,19 @@ document.addEventListener('DOMContentLoaded', function(){
 		pomodoroTime : 2,
 		shortBreakTime : 5,
 		longBreakTime : 10,
-		progressReportTime : 5
+		progressReportTime : 1
 	});
 
 	var pomodoroView = new PomodoroView({
-		container : 'main .container'
+		container : '#digital'
 	});
 
 	pomodoro.subscribe('pomodoro:progress', function(elapsedTime){
-		var displayTime = parseInt(elapsedTime.getMinutes() / 60) + ':' +  elapsedTime.getMinutes() + ':' + elapsedTime.getSeconds();
-		pomodoroView.render(displayTime);
+		pomodoroView.render({
+			seconds : parseInt(elapsedTime.getSeconds(), 10),
+			minutes : parseInt(elapsedTime.getMinutes(), 10),
+			hours : parseInt(elapsedTime.getMinutes() / 60, 10)
+		});
 	});
 
 	pomodoro.subscribe('pomodoro:finished', function(){

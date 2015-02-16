@@ -15,12 +15,52 @@ header, main{
 	float : left;
 	height : 100%;
 	margin : 0;
-	width : 50%;
 }
 	header{
-		background-color : #C82643;
+		background-color : #e03a3e;
+		width : 25%;
+	}
+	header h1{
+		
+		font-size : 50px;
+		text-align : center;
 	}
 	header h1 a{
 		color : #FFF;
+		
 		text-decoration : none;
 	}
+
+.pomodoro{}
+
+.pomodoro #analog{
+	width: 0;
+	height: 0;
+}
+.pomodoro #digital{
+	color : #fff;
+	font-size : 45px;
+	margin : 0 auto;
+	padding : 20px 10px;
+	text-align : center;
+}
+	#digital .seconds,
+	#digital .minutes,
+	#digital .hours{
+		background-color : #333;
+		display : inline-block;
+		padding : 5px 10px;
+		margin : 0;
+	}
+
+main{
+	width : 75%;
+	text-align : center;
+}
+
+[name="goalofday"]{
+	width : 95%;
+	margin : 10px auto;
+	padding : 10px 15px;
+	border : 1px solid #eee;
+}
